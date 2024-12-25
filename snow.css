@@ -12,6 +12,15 @@ html {
     height: auto;
 }
 
+.fade-in-text {
+    font-family: Arial;
+    font-size: 150px;
+    color:rgb(0, 132, 255);
+    text-align: center;
+    animation: fadeIn 10s;
+  }
+  
+  
 .snow-container {
     position: fixed;
     top: 0;
@@ -57,4 +66,9 @@ html {
         opacity: 0.25;
         transform: translate(10vw, 100vh);
     }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
