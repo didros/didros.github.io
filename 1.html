@@ -5,8 +5,22 @@
 p.ex1 {
     font-size: 10vw;
     text-align: center;
-    color: #7CB9E8;
+    color:red;
 }
+.fade-in-text {
+  font-family: Arial;
+  font-size: 150px;
+  color:red;
+  text-align: center;
+  animation: fadeIn 6s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
 </style>
 <link rel="stylesheet" href="snow.css">
 <script>
@@ -98,7 +112,9 @@ document.addEventListener("DOMContentLoaded", function () {
 <body>
 
 <div class="snow-container">
-    <p class="ex1">Je suis discret souvent oublié. Derrière Le château et La tâche</p>
+    <div class="fade-in-text">
+        <p>Trouve moi derrière le "Le château" et "La tâche"</p>
+    </div>
 </div>
 <div style="height: 200vh;">
 
